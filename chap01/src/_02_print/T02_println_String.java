@@ -16,6 +16,8 @@ public class T02_println_String {
             m = m+K;
         }
         
-        System.out.print(m);
+        System.out.println(m);
+        
+        System.out.println("연산결과  : " + 5 * 7);
     }
 }
