@@ -1,5 +1,7 @@
 package chap02;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
 public class T03_printf {
@@ -27,9 +29,11 @@ public class T03_printf {
 		System.out.printf("%b\n", true);
 		System.out.printf("%b\n", 10>4);
 		
-//		Date date = new Date();
-//		
-//		System.out.print(date);
+        // 현재 날짜 가져오기 및 포맷 지정
+        LocalDate today = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String formattedDate = today.format(formatter);
+        System.out.println("현재 날짜: " + formattedDate);
 //		
 		// 문제 
 		System.out.printf("현재는 %d년 %d월 이고, 우리나라의 평균 온도는 %.1f 도 입니다.\n", 2025, 8, 34.5);
