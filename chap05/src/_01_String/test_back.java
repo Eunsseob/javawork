@@ -91,6 +91,9 @@ public class test_back {
 //			System.out.print(arr[-1]);
 		}
 		
+		for(int i=0; i<k1; i++) {
+			System.out.println(arr[i]);
+		}
 //		System.out.print(arr[1]);
 //		System.out.print(arr[-1]);
 	}
