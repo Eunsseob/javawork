@@ -7,8 +7,12 @@ public class VarArg {
 		VarArg v = new VarArg();
 		v.method = 
 		*/
+	
 		method("a", "b", "c");
 		method("a", "b", "c", "d", "e", "f");
+		
+		String[] ar = {"a","b","c","d","e","f"};
+		method(ar);
 	}
 	
 	/*
