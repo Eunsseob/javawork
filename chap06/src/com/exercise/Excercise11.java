@@ -17,7 +17,7 @@ public class Excercise11 {
 }
 
 class Math{
-	public int max(int[] arr) {
+	int max(int[] arr) {
 		
 		int max = arr[0];
 		
@@ -30,7 +30,7 @@ class Math{
 		return max;
 	}
 	
-	public int min(int[] arr) {
+	int min(int[] arr) {
 		int min = arr[0];
 		
 		for(int i = 0; i<arr.length; i++) {
