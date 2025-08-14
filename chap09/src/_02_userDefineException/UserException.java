@@ -1,0 +1,9 @@
+package _02_userDefineException;
+
+public class UserException extends Exception {
+	
+	public UserException(String msg) {
+		super(msg);
+	}
+
+}
