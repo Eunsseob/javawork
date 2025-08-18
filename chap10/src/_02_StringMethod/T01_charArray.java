@@ -16,6 +16,18 @@ public class T01_charArray {
 		
 		char ch = str3.charAt(1);
 		System.out.println(ch);
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("주민등록번호 입력 : ");
+		
+		char sn = sc.next().charAt(7);
+		switch(sn) {
+		case '1': case '3':
+			System.out.println("남자");
+		case '2': case '4':
+			System.out.println("여자");
+		}
+		
 	}
 		
 }
