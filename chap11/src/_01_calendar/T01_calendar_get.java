@@ -23,8 +23,19 @@ public class T01_calendar_get {
 		
 		if(ampm == 0)
 			System.out.println("오전입니다 시간 : AM"+Calendar.HOUR);
+		if(today.get(Calendar.HOUR) < 10) {
+			System.out.println("0");
+		}
 		else
 			System.out.println("오후입니다 시간 : PM"+Calendar.HOUR);
+		if(today.get(Calendar.HOUR) < 10) {
+			System.out.println("0");
+		}
+		
+		System.out.println(today.get(Calendar.HOUR)
+				+ today.get(Calendar.MINUTE)
+				+ today.get(Calendar.SECOND)
+				);
 	}
 
 }
